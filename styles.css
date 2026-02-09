@@ -4,6 +4,7 @@
     --nav-bar: rgb(16, 2, 32);
     --light-blue: rgb(0, 89, 172);
     --footer-bg: rgb(0, 89, 172);
+    --light-red: rgb(255, 99, 71);
 }
 
 * {
@@ -117,6 +118,14 @@ footer {
 #braille-container {
   margin-top: 2rem;
   text-align: center;
+  background-color: var(--nav-bar);  /* Dark background to contrast with the purple body */
+  padding: 2rem;  /* Adds space inside the box around the content */
+  border-radius: 15px;  /* Rounded corners */
+  border: 2px solid var(--light-blue);  /* Optional border for definition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Subtle shadow for depth */
+  max-width: 400px;  /* Keeps it compact */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #current-word {
@@ -161,13 +170,13 @@ footer {
 }
 
 .dot.raised {
-  background-color: var(--light-blue);
-  color: var(--nav-bar);
+  background-color: var(--light-red);
+  color: var(--text-color);
 }
 
 .dot:hover, .dot:focus {
   outline: none;
-  border-color: var(--text-color);
+  border-color: var(--light-red);
 }
 
 .braille-controls {
