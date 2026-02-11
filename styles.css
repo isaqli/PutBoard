@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Patrick Hand", sans-serif;
 }
 
 html {
@@ -118,17 +119,30 @@ footer {
 #braille-container {
   margin-top: 2rem;
   text-align: center;
-  background-color: var(--nav-bar);  /* Dark background to contrast with the purple body */
-  padding: 2rem;  /* Adds space inside the box around the content */
-  border-radius: 15px;  /* Rounded corners */
-  border: 2px solid var(--light-blue);  /* Optional border for definition */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Subtle shadow for depth */
-  max-width: 400px;  /* Keeps it compact */
+  background-color: var(--nav-bar);  
+  padding: 2rem; 
+  border-radius: 15px;  
+  border: 2px solid var(--text-color);  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
 
 #current-word {
+  position: relative;  
+  text-decoration: underline;  
+  text-decoration-color: var(--light-blue); 
+  text-decoration-thickness: 2px;  
+}
+
+#word-display {
+  background-color: var(--light-red); 
+  padding: 0 2px;  
+  font-size: 1.4rem;
+}
+
+/* #current-word {
   color: var(--text-color);
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -137,7 +151,7 @@ footer {
 #word-display {
   font-weight: bold;
   color: var(--light-blue);
-}
+} */
 
 #braille-cell {
   display: flex;
@@ -199,5 +213,15 @@ footer {
 }
 
 #submit-btn:hover, #space-btn:hover, #delete-btn:hover, #clear-btn:hover {
-  background-color: var(--dark-purple);
+  background-color: var(--light-red);
+}
+
+#braille-chart {
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+#braille-chart img {
+  border: 5px solid var(--light-red);
 }
