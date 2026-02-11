@@ -2,8 +2,10 @@
 document.addEventListener('DOMContentLoaded', () => {
   const wordDisplay = document.getElementById('word-display');
   const dots = document.querySelectorAll('.dot');
-  let raisedDots = new Set(); // Track which dots are raised
-  let currentWord = ''; // Full word being built
+  const showChartBtn = document.getElementById('show-chart-btn');  
+  const brailleChart = document.getElementById('braille-chart');
+  let raisedDots = new Set(); 
+  let currentWord = ''; 
 
   // Braille mapping: dot patterns to letters (1-6 positions)
   const brailleMap = {
@@ -82,4 +84,21 @@ document.addEventListener('DOMContentLoaded', () => {
     raisedDots.clear();
     dots.forEach(dot => dot.classList.remove('raised'));
   });
+});
+
+
+// Show Braille Chart 
+const showChartBtn = document.getElementById('show-chart-btn');
+const brailleChart = document.getElementById('braille-chart');
+
+showChartBtn.addEventListener('click', () => {
+  if (brailleChart.style.display === 'none' || brailleChart.style.display === '') {
+    brailleChart.style.display = 'block';  // Show the image
+    showChartBtn.textContent = 'Hide Braille Chart';
+    speakText('Braille chart shown');
+  } else {
+    brailleChart.style.display = 'none';  // Hide the image
+    showChartBtn.textContent = 'Show Braille Chart';
+    speakText('Braille chart hidden');
+  }
 });

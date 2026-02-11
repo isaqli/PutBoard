@@ -225,3 +225,20 @@ footer {
 #braille-chart img {
   border: 5px solid var(--light-red);
 }
+
+#show-chart-btn {
+  display: block;  
+  margin: 1rem auto 0; 
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: var(--footer-bg);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#show-chart-btn:hover {
+  background-color: var(--light-red);
+}
