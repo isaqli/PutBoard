@@ -2,7 +2,7 @@
     --text-color: rgb(255, 255, 255);
     --dark-purple: rgb(35, 6, 57);
     --nav-bar: rgb(16, 2, 32);
-    --light-blue: rgb(0, 89, 172);
+    --light-blue: rgb(63, 152, 235);
     --footer-bg: rgb(0, 89, 172);
     --light-red: rgb(255, 99, 71);
 }
@@ -231,7 +231,7 @@ footer {
   margin: 1rem auto 0; 
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: var(--footer-bg);
+  background-color: var(--light-red);
   color: white;
   border: none;
   border-radius: 5px;
@@ -240,5 +240,5 @@ footer {
 }
 
 #show-chart-btn:hover {
-  background-color: var(--light-red);
+  background-color: var(--light-blue);
 }
