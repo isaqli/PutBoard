@@ -102,3 +102,19 @@ showChartBtn.addEventListener('click', () => {
     speakText('Braille chart hidden');
   }
 });
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   const text = document.querySelector('section p').innerText;
+  
+//   // Speak on first click anywhere on the page
+//   document.addEventListener('click', () => {
+//     const utterance = new SpeechSynthesisUtterance(text);
+//     window.speechSynthesis.speak(utterance);
+//   }, { once: true }); // Only runs once
+// });
+
+// function speak() {
+//   const text = document.querySelector('section p').innerText;
+//   const utterance = new SpeechSynthesisUtterance(text);
+//   window.speechSynthesis.speak(utterance);
+// }

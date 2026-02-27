@@ -142,17 +142,6 @@ footer {
   font-size: 1.4rem;
 }
 
-/* #current-word {
-  color: var(--text-color);
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-#word-display {
-  font-weight: bold;
-  color: var(--light-blue);
-} */
-
 #braille-cell {
   display: flex;
   flex-direction: column;
