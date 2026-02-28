@@ -100,11 +100,15 @@ section h2::after {
     height: 11px;
     bottom: -5px;
     left: -2%;
-    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 10'%3E%3Cpath d='M0,5 Q12.5,0 25,5 T50,5' stroke='%23add59c' stroke-width='3' fill='none'/%3E%3C/svg%3E");
-      */
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 10'%3E%3Cpath d='M0,5 Q12.5,0 25,5 T50,5' stroke='%230059AC' stroke-width='3' fill='none'/%3E%3C/svg%3E");
     background-repeat: repeat-x;
 }
+
+/*section bg colors */
+#about-section, #problemandsolution-section {
+    background-color: rgb(45, 10, 80); /* Slightly lighter purple */
+}
+
 
 footer {
     background-color: var(--footer-bg);
@@ -131,6 +135,7 @@ footer {
 
 #current-word {
   position: relative;  
+  color: var(--dark-purple);
   text-decoration: underline;  
   text-decoration-color: var(--light-blue); 
   text-decoration-thickness: 2px;  
@@ -206,6 +211,7 @@ footer {
 }
 
 #braille-chart {
+  display: none;
   text-align: center;
   margin-top: 1rem;
   padding: 1rem;
