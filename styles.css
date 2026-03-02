@@ -321,3 +321,55 @@ footer {
 .resource-btn i {
   font-size: 1rem;
 }
+
+/* Additional resources text section */
+.additional-resources {
+  max-width: 900px;
+  width: 100%;
+  margin-top: 4rem;
+  text-align: left;
+  padding-top: 2rem;
+  border-top: 2px solid var(--light-blue);
+}
+
+.additional-resources h3 {
+  color: var(--text-color);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.resource-text-block {
+  margin-bottom: 2rem;
+}
+
+.resource-text-block h4 {
+  color: var(--light-blue);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.resource-text-block > p {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.sub-resource {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--light-blue);
+}
+
+.sub-resource h5 {
+  color: var(--text-color);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.sub-resource p {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
