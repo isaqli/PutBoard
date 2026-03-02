@@ -105,10 +105,18 @@ section h2::after {
 }
 
 /*section bg colors */
-#about-section, #problemandsolution-section {
+#about-section, #education-section {
     background-color: rgb(45, 10, 80); /* Slightly lighter purple */
 }
 
+#about-section p {
+  color: var(--text-color);
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 footer {
     background-color: var(--footer-bg);
@@ -236,4 +244,80 @@ footer {
 
 #show-chart-btn:hover {
   background-color: var(--light-blue);
+}
+
+/* Resources container */
+/* Resource container */
+.resource-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/* Individual resource card */
+.resource-card {
+  background-color: var(--nav-bar);
+  border: 2px solid var(--light-blue);
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Icon styling */
+.resource-icon {
+  font-size: 3rem;
+  color: var(--light-blue);
+  margin-bottom: 1rem;
+}
+
+/* Card title */
+.resource-card h3 {
+  color: var(--text-color);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Card text */
+.resource-card p {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Download button */
+.resource-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 12px 24px;
+  background-color: var(--light-blue);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem;
+}
+
+.resource-btn:hover {
+  background-color: var(--light-red);
+  transform: scale(1.05);
+}
+
+.resource-btn i {
+  font-size: 1rem;
 }

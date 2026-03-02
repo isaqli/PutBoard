@@ -66,6 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     currentWord += ' ';
     updateDisplay();
+    vibrate(50); // Light vibration
+    
     // Reset dots
     raisedDots.clear();
     dots.forEach(dot => dot.classList.remove('raised'));
