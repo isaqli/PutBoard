@@ -106,7 +106,7 @@ section h2::after {
 }
 
 /*section bg colors */
-#about-section, #education-section {
+#about-section, #education-section, #healthresources-section {
     background-color: var(--light-purple); 
 }
 
