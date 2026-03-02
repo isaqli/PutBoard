@@ -5,6 +5,7 @@
     --light-blue: rgb(63, 152, 235);
     --footer-bg: rgb(0, 89, 172);
     --light-red: rgb(255, 99, 71);
+    --light-purple: rgb(45, 10, 80);
 }
 
 * {
@@ -106,7 +107,7 @@ section h2::after {
 
 /*section bg colors */
 #about-section, #education-section {
-    background-color: rgb(45, 10, 80); /* Slightly lighter purple */
+    background-color: var(--light-purple); 
 }
 
 #about-section p {

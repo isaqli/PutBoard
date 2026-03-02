@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let raisedDots = new Set(); 
   let currentWord = ''; 
 
-  // Braille mapping: dot patterns to letters (1-6 positions)
+  // Braille letters
   const brailleMap = {
     '1': 'A', '12': 'B', '14': 'C', '145': 'D', '15': 'E', '124': 'F', '1245': 'G', '125': 'H', '24': 'I', '245': 'J',
     '13': 'K', '123': 'L', '134': 'M', '1345': 'N', '135': 'O', '1234': 'P', '12345': 'Q', '1235': 'R', '234': 'S', '2345': 'T',
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     currentWord += ' ';
     updateDisplay();
     vibrate(50); // Light vibration
-    
+
     // Reset dots
     raisedDots.clear();
     dots.forEach(dot => dot.classList.remove('raised'));
