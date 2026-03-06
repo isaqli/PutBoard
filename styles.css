@@ -144,7 +144,7 @@ footer {
 
 #current-word {
   position: relative;  
-  color: var(--dark-purple);
+  color: var(--nav-bar);
   text-decoration: underline;  
   text-decoration-color: var(--light-blue); 
   text-decoration-thickness: 2px;  
@@ -247,7 +247,6 @@ footer {
   background-color: var(--light-blue);
 }
 
-/* Resources container */
 /* Resource container */
 .resource-container {
   display: flex;
@@ -323,58 +322,61 @@ footer {
   font-size: 1rem;
 }
 
-/* Additional resources text section */
-.additional-resources {
-  max-width: 900px;
-  width: 100%;
-  margin-top: 4rem;
-  text-align: left;
-  padding-top: 2rem;
-  border-top: 2px solid var(--light-blue);
+/*Additional Resources*/
+
+.additional-resources, .resources-text {
+    max-width: 900px;
+    width: 100%;
+    margin-top: 2rem;
+    text-align: left;
 }
 
-.additional-resources h3 {
-  color: var(--text-color);
-  font-size: 2rem;
-  margin-bottom: 2rem;
+.additional-resources {
+    padding-top: 2rem;
+    border-top: 2px solid var(--light-blue);
+}
+
+.additional-resources h3, .resources-text h3 {
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .resource-text-block {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
-.resource-text-block h4 {
-  color: var(--light-blue);
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+.resource-text-block h3, .resource-text-block h4 {
+    color: var(--light-blue);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .resource-text-block > p {
-  color: var(--text-color);
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
 .sub-resource {
-  margin-left: 1.5rem;
-  margin-top: 1rem;
-  padding-left: 1rem;
-  border-left: 3px solid var(--light-blue);
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--light-blue);
 }
 
-.sub-resource h5 {
-  color: var(--text-color);
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
+.sub-resource h4, .sub-resource h5 {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
 }
 
 .sub-resource p {
-  color: var(--text-color);
-  font-size: 1.1rem;
-  line-height: 1.6;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
-
 /* Education Section*/
 
 .charts-wrapper {
@@ -389,4 +391,44 @@ footer {
   height: 280px;
   border: 3px solid var(--light-blue);
   border-radius: 8px;
+}
+
+.example-box {
+    background-color: var(--nav-bar);
+    border: 2px solid var(--light-blue);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.example-box h4 {
+    color: var(--light-blue);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.example-box p {
+    color: var(--text-color);
+    font-size: 1.4rem; 
+    line-height: 1.8;
+    margin: 0.5rem 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.learn-more-btn, .resource-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--light-blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover, .resource-btn:hover {
+    background-color: var(--light-red);
 }
