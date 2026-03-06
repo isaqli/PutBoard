@@ -432,3 +432,22 @@ footer {
 .learn-more-btn:hover, .resource-btn:hover {
     background-color: var(--light-red);
 }
+
+/* Mobility Tips */
+.icon-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.icon-header i {
+    font-size: 2rem;
+    color: var(--light-blue);
+}
+
+.icon-header h3 {
+    color: var(--light-blue);
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
