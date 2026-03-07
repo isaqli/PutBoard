@@ -359,6 +359,15 @@ footer {
     margin-bottom: 1rem;
 }
 
+.resource-text-block a {
+    color: var(--light-red);
+    text-decoration: underline;
+}
+
+.resource-text-block a:hover {
+    color: white;
+}
+
 .sub-resource {
     margin-left: 1.5rem;
     margin-top: 1rem;
