@@ -105,3 +105,37 @@ showChartBtn.addEventListener('click', () => {
   }
 });
 
+// Read all website text
+// Text-to-Speech on Click
+let msg = new SpeechSynthesisUtterance();
+let voices = speechSynthesis.getVoices();
+
+// Wait for voices to load
+speechSynthesis.onvoiceschanged = () => {
+  voices = speechSynthesis.getVoices();
+  msg.voice = voices[0];
+};
+
+// Select all text elements
+const tags = document.querySelectorAll('p,a,h1,h2,h3,li');
+
+tags.forEach((tag) => {
+  tag.addEventListener('click', (e) => {
+    // Prevent reading buttons and links that navigate
+    if (tag.tagName === 'A' && tag.getAttribute('href').startsWith('#')) {
+      return;
+    }
+    
+    msg.text = e.target.innerText;
+    tag.style.backgroundColor = "lightblue";
+    speechSynthesis.speak(msg);
+    
+    // Remove highlight after reading
+    let interval = setInterval(() => {
+      if (!speechSynthesis.speaking) {
+        tag.style.removeProperty('background-color');
+        clearInterval(interval);
+      }
+    }, 100);
+  });
+});
